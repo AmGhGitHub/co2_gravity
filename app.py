@@ -34,7 +34,15 @@ result = (
     / ((rhoWater - rhoCO2) * 9.81 * res_thickness * 2 * math.pi)
 )
 
-# Display the result
-st.write(
-    "The calculated critical radius for gravity ovveride is:", round(result, 4), "m"
+st.markdown(
+    f'<span style="font-size: 20px; color: black;">The calculated critical radius for gravity override is: </span>'
+    f'<span style="font-size: 20px; color: green;">{round(result, 4)}</span>'
+    f'<span style="font-size: 20px; color: black;"> m</span>',
+    unsafe_allow_html=True,
+)
+
+
+st.markdown(
+    '<p style="text-align: right; font-size: 10px ;color:red;">Amir Ghaderi, Oct. 2, 2023</p>',
+    unsafe_allow_html=True,
 )
