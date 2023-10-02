@@ -6,7 +6,9 @@ import streamlit as st
 st.title("Gravity Ovveride in CO2 Storage Through Vertical Wells")
 
 # Getting user input
-kv_kh_ratio = st.number_input("kv/kh ratio:", value=0.01, step=0.0001, min_value=0.0001)
+kv_kh_ratio = st.number_input(
+    "kv/kh ratio:", value=0.01, step=0.0001, min_value=0.001, format="%.3f"
+)
 res_thickness = st.number_input(
     "Reservoir thickness (m)", value=200.0, step=1.0, min_value=1.0
 )
