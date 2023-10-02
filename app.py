@@ -3,7 +3,7 @@ import math
 import streamlit as st
 
 # Streamlit UI
-st.title("Gravity Ovveride in CO2 Storage Through Vertical Wells")
+st.title("Gravity Override in Vertical CO2 Injectors")
 
 # Getting user input
 kv_kh_ratio = st.number_input(
